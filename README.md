@@ -1,16 +1,10 @@
 # invoice_app
 
-An invoice app
+An invoice app for elevator servicing company's in Persian language with the ability to calculate the weekly/monthly/anual payment for services.
+Beside creating invoice, this app can make a pdf from the created invoice in application and send it to the customer.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This Project is just a simple invoice app and is not conserned as a professional invoice app.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Hive database used inorder to store cache file and data's on device.
