@@ -1,5 +1,5 @@
+import 'package:invoice_app/view/UI/invoicePrint.dart';
 import 'package:invoice_app/view/common/exports.dart';
-import 'package:hive/hive.dart';
 
 class WatchInvoice extends StatelessWidget {
   const WatchInvoice({super.key, required this.invoice});
@@ -8,6 +8,20 @@ class WatchInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget? containerCheck = Container(
+      height: 30,
+      width: 30,
+      decoration: BoxDecoration(
+          color: Colors.black87, borderRadius: BorderRadius.circular(5)),
+    );
+    Widget? containerUncheck = Container(
+      height: 30,
+      width: 30,
+      decoration: BoxDecoration(
+          border: Border.all(width: 3.0, color: Colors.black),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(5)),
+    );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -632,6 +646,23 @@ class WatchInvoice extends StatelessWidget {
                         )),
                       ]),
                 ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              CustomOutlineBtn(
+                width: width * 0.65,
+                hieght: hieght * 0.08,
+                text: "ساخت پی دی اف",
+                btnColor: const [Colors.blueAccent, Colors.deepPurpleAccent],
+                onTap: () => Future.delayed(
+                    const Duration(milliseconds: 500),
+                    () => Get.to(
+                        () => InvoicePrint(
+                              invoice: invoice,
+                            ),
+                        transition: Transition.fadeIn,
+                        duration: const Duration(milliseconds: 1000))),
               )
             ],
           ),

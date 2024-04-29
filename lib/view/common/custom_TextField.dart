@@ -34,6 +34,7 @@ class CustomTextField extends StatelessWidget {
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: TextFormField(
+          textAlign: TextAlign.right,
           textDirection: TextDirection.rtl,
           onChanged: onChanged,
           keyboardType: keyboardType,

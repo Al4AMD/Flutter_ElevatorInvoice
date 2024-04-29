@@ -191,7 +191,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "شماره اشتراک",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "شماره اشتراک",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.subtitles),
                 onChanged: (value) => setState(() => subNumber = value),
               ),
@@ -502,7 +502,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "شارژ ماهیانه(تومان)",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "شارژ ماهیانه(تومان)",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.currency_usd),
                 onChanged: (value) =>
                     setState(() => monthlyCharge = BigInt.parse(value)),
@@ -512,7 +512,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "مبلغ کل خرید قطعات(تومان)",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "مبلغ کل خرید قطعات(تومان)",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.currency_usd),
                 onChanged: (value) =>
                     setState(() => piecesTotal = BigInt.parse(value)),
@@ -522,7 +522,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "اجرت تعویض قطعات(تومان)",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "اجرت تعویض قطعات(تومان)",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.currency_usd),
                 onChanged: (value) =>
                     setState(() => pieceChangeTotal = BigInt.parse(value)),
@@ -532,7 +532,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "بدهی قبلی(تومان)",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "بدهی قبلی(تومان)",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.currency_usd),
                 onChanged: (value) =>
                     setState(() => remainingDebt = BigInt.parse(value)),
@@ -542,7 +542,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "مبلغ پرداختی(تومان)",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "مبلغ پرداختی(تومان)",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.currency_usd),
                 onChanged: (value) =>
                     setState(() => totalPayment = BigInt.parse(value)),
@@ -552,7 +552,7 @@ class _CreateInvoiceState extends State<CreateInvoice> {
                 label: "مانده حساب(تومان)",
                 labelStyle: appstyle(17, Colors.black87, FontWeight.w500),
                 hintText: "مانده حساب(تومان)",
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.number,
                 prefixIcon: const Icon(MaterialCommunityIcons.currency_usd),
                 onChanged: (value) =>
                     setState(() => totalRemain = BigInt.parse(value)),
